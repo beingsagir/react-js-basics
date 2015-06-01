@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>React JS basics</title>
+</head>
+<body>
+<div id="first"></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.13.2/react.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.13.2/JSXTransformer.js"></script>
+<script type="text/jsx">
+	var helloWorld = React.createClass({
+		render: function(){
+			return <div>hello World !</div>;
+		}
+	});
+
+	React.render(<div>hello World !</div>, document.getElementById('first'));
+</script>
+</body>
+</html>
